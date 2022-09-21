@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="app-bar">
+            <div class="logo">
+                <img src="./images/logo.png" style="width: 55px;width:55px;" alt="image load error">
+            </div>
+            <div class="app-title">
+                <h1 id="title">My <span>Book</span>List</h1>
+            </div>
+
+        </div>
+        <div class="container">
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="book-title">Title:</label>
+                    <input type="text" class="form-control" id="book-title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" class="form-control" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#:</label>
+                    <input type="text" class="form-control" id="isbn">
+                </div>
+                <input class="btn btn-danger " type="submit" value="submit">
+            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </div>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
